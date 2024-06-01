@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 4</title>
+</head>
+<body>
+    <h1>Contador de Cliques</h1>
+    <button onclick="contarCliques()">Clique em mim!</button>
+    <p id="contador">Cliques: 0</p>
+
+    <script>
+        // Crie um arquivo HTML com um botão que conta quantas vezes ele foi clicado e exibe o número de cliques.
+
+        var contadorcliques = 0
+
+        function contarCliques() {
+
+            contadorcliques++
+            
+            document.getElementById("contador").innerText = `Cliques:${contadorcliques}`
+        }
+    </script>
+</body>
+</html>

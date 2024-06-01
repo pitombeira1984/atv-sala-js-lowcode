@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 2</title>
+</head>
+<body>
+    <h1>Somar Dois Números</h1>
+    <input type="number" id="num1" placeholder="Número 1">
+    <input type="number" id="num2" placeholder="Número 2">
+    <button onclick="somar()">Somar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function somar() {
+           // Crie um arquivo HTML com dois campos de entrada e um botão. Quando o botão for clicado, some os valores dos dois campos e exiba o resultado.
+           var n1 = Number(document.getElementById("num1").value);
+           var n2 = Number(document.getElementById("num2").value);
+           var soma = n1 + n2;
+           document.getElementById("resultado").innerText = `A soma é ${soma}`
+        }
+    </script>
+</body>
+</html>
